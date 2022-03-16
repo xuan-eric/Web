@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>高科大第一校區 女生宿舍</title>
+
+    <!-- icon python flask -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/core-img/favicon.ico') }}">
+    <!-- css python flask -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.css')}}">
+    <!-- font python flask -->
+    <link rel="stylesheet" href="{{url_for('static',filename='font-awesome-4.7.0/css/font-awesome.min.css')}}">
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">-->
+</head>
+
+<body>
+<div id="preloader">
+    <div class="preload-content">
+        <div id="original-load"></div>
+    </div>
+</div>
+
+<!-- Subscribe Modal-->
+<div class="subscribe-newsletter-area">
+    <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <h5 class="title">Subscribe to my newsletter</h5>
+                    <form action="#" class="newsletterForm" method="post">
+                        <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
+                        <button type="submit" class="btn original-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breaking News Area -->
+                <div class="col-12 col-sm-8">
+                    <div class="breaking-news-area">
+                        <div id="breakingNewsTicker" class="ticker">
+                            <ul>
+                                <li><a href="{{ url_for('home')}}">高科大 第一校區 女生宿舍</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Social Area -->
+                <div class="col-12 col-sm-4">
+                    <div class="top-social-area">
+                        <a href="https://www.facebook.com/NKUST.DOA/posts/2848278805246946/" data-toggle="tooltip"
+                           data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-2x"
+                                                                       aria-hidden="true"></i></a>
+                        <a href="{{ url_for('home')}}" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i
+                                class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://youtu.be/h0J7s_Grdx4" data-toggle="tooltip" data-placement="bottom"
+                           title="Youtube"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Area -->
+    <div class="original-nav-area" id="stickyNav">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-end">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu" id="originalNav">
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="{{ url_for('home')}}"><i class="fa fa-home"></i>首頁</a></li>
+
+                                <li><a href="{{ url_for('aboutus')}}"><i class="fa fa-building"></i>大樓介紹</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{ url_for('aboutus')}}">大樓介紹</a></li>
+                                        <li><a href="{{ url_for('aboutus')}}">K書中心</a></li>
+                                        <li><a href="{{ url_for('aboutus')}}">交誼廳</a></li>
+                                        <li><a href="{{ url_for('aboutus')}}">運動場地</a></li>
+                                        <li><a href="{{ url_for('aboutus')}}">收費標準</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="{{ url_for('pubfac')}}"><i class="fa fa-book"></i>公設借閱</a></li>
+
+                                <li><a href="{{ url_for('contact')}}"><i class="fa fa-map-o"></i>餐飲目錄</a></li>
+
+                                <li><a href="{{ url_for('opinion')}}"><i class="fa fa-comments-o"></i>意見信箱</a></li>
+                                <!-- <i class="fas fa-search-dollar"></i><li><a href="{{ url_for('singlepost')}}">收費標準</a>
+                                     <ul class="dropdown">
+                                         <li><a href="{{ url_for('singlepost')}}">住宿費</a></li>
+                                         <li><a href="{{ url_for('singlepost')}}">網路費</a></li>
+                                     </ul>
+                                 </li>-->
+
+                                <li><a href="{{ url_for('singlepost')}}"><i class="fa fa-commenting"></i>訊息專區</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{{ url_for('singlepost')}}">公佈欄</a></li>
+                                        <li><a href="{{ url_for('singlepost')}}">活動專區</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="{{ url_for('repair')}}"><i class="fa fa-cogs"></i>我要報修</a></li>
+
+                                <li><a href="{{ url_for('account')}}"><i class="fa fa-user"></i>我的帳號</a></li>
+
+                                <li><a href="{{ url_for('communication')}}"><i class="fa fa-comments"></i>住戶交流</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+<div class="hero-area">
+    <!-- Hero Slides Area -->
+    <div class="hero-slides owl-carousel">
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url({{ url_for('static', filename='images/bg-img/b2.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img" style="background-image:url({{url_for('static', filename='images/bg-img/b1.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img" style="background-image:url({{url_for('static', filename='images/bg-img/b3.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Blog Wrapper Start ##### -->
+<div class="blog-wrapper section-padding-100 clearfix">
+    <div class="container">
+        <div class="row align-items-end">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area clearfix mb-100">
+                    <!-- Blog Content -->
+                    <div class="single-blog-content">
+                        <div class="line"></div>
+                        <a href="{{ url_for('home')}}" class="post-tag">公佈欄</a>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <!-- <th scope="col">#</th> -->
+                                <th scope="col">日期</th>
+                                <th scope="col" , width=80%>標題</th>
+                                <!-- <th scope="col">內容</th> -->
+                                <!-- <th scope="col">點閱次數</th> -->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                        <a href="{{ url_for('home')}}" class="btn original-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s"
+                     data-wow-duration="1000ms">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-thumbnail">
+                                <img src="{{url_for('static', filename='images/blog-img/3.jpg')}}" alt="">
+                                <div class="post-date">
+                                    <a href="{{ url_for('home')}}">17 <span>December</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Activity</a>
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">「臥」在薑餅屋</a></h4>
+                                <p>第25屆宿委會12月自訂活動-「臥」在薑餅屋
+                                    照過來，照過來!
+                                    在神聖的聖誕夜，高科大宿舍居然被邪惡的薑餅魔人入侵了!
+                                    為了拯救宿舍的和平，需要大家趕快來報名本次活動
+                                    找出潛藏在四周的薑餅魔人，並且用你的嘴降下最嚴厲的制裁
+                                    《找出潛藏在聖誕夜臥底的薑餅人，並吃掉它吧!》
+                                    活動時間:108年12月17日 星期二
+                                    活動地點:男宿敬業樓B1F創新育成中心</p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <p>3 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
+                     data-wow-duration="1000ms">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-thumbnail">
+                                <img src="{{url_for('static', filename='images/blog-img/4.jpg')}}" alt="">
+                                <div class="post-date">
+                                    <a href="{{ url_for('home')}}">29 <span>November</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Activity</a>
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">水果深得我心</a></h4>
+                                <p>🍎準備期中考，讓你埋頭苦讀到心很累嗎？期中考結束、疫情逐漸趨緩，該好好放鬆一下了～快來報名宿舍11月的活動🍒水果深得我心🍒
+                                    一起手作水果三明治、玩遊戲，保證你的笑容像水果一樣甜，心情像三明治一樣好滋味😋
+                                    🍊活動時間：110/11 /29 (一)
+                                    19:00 開始入場，預計結束時間 21:45
+                                    🍇活動地點：男宿 B1F 創新育成中心
+                                </p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <p>3 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s"
+                     data-wow-duration="1000ms">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-blog-thumbnail">
+                                <!-- <img src="img/blog-img/7.jpg" alt=""> -->
+                                <!-- <div class="post-date">
+                                    <a href="#">10 <span>march</span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content mt-50">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Chicken Soup for the Soul</a> <!--心靈雞湯-->
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">Don’t let the past steal your present.</a></h4>
+                                <p>別讓過去悄然偷走了你的當下。</p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <!-- <p>3 comments</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Load More -->
+                <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                    <a href="{{ url_for('home')}}" class="btn original-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Instagram Feed Area Start ##### -->
+<div class="instagram-feed-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="insta-title">
+                    <h5>Follow us @ Instagram</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Instagram Slides -->
+    <div class="instagram-slides owl-carousel">
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/1.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/2.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/3.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/4.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/5.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/6.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/7.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Instagram Feed Area End ##### -->
+
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Footer Nav Area -->
+                <div class="classy-nav-container breakpoint-off">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-center">
+
+                        <!-- Navbar Toggle -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{{ url_for('home')}}">首頁</a></li>
+                                    <li><a href="{{ url_for('aboutus')}}">大樓介紹</a></li>
+                                    <li><a href="{{ url_for('pubfac')}}">公設借閱</a></li>
+                                    <li><a href="{{ url_for('contact')}}">餐飲目錄</a></li>
+                                    <li><a href="{{ url_for('opinion')}}">意見信箱</a></li>
+                                    <li><a href="{{ url_for('singlepost')}}">訊息專區</a></li>
+                                    <li><a href="{{ url_for('repair')}}">我要報修</a></li>
+                                    <li><a href="{{ url_for('account')}}">我的帳號</a></li>
+                                    <li><a href="{{ url_for('communication')}}">住戶交流</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Footer Social Area -->
+                <div class="footer-social-area mt-30">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"
+                                                                                                aria-hidden="true"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"
+                                                                                               aria-hidden="true"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"
+                                                                                              aria-hidden="true"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"
+                                                                                               aria-hidden="true"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"
+                                                                                              aria-hidden="true"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"
+                                                                                               aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+    All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+        href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+</footer>
+<!-- ##### Footer Area End ##### -->
+
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="{{ url_for('static', filename='js/jquery/jquery-2.2.4.min.js') }}"></script>
+<!-- Popper js -->
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<!-- Bootstrap js -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- Plugins js -->
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<!-- Active js -->
+<script src="{{ url_for('static', filename='js/active.js') }}"></script>
+
+</body>
+
+</html>

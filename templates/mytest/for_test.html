@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for語句</title>
+    <h1>for語句-練習</h1>
+    <style>
+        .line{
+            display:inline-block;
+            height:1px;
+            width:100%;
+            background:#fff;
+            overflow:hidden;
+            vertical-align:middle;
+            }
+    </style>
+</head>
+<body>
+<table>
+    {%for show in show %}
+    <li style="list-style-type:none">{{show.name}}<span class="{{loop.index | index_class}}"></span></li>
+    {% endfor %}
+
+    <thead>
+    <th>人員名稱</th>
+    <th>人員生日</th>
+    </thead>
+    <tbody>
+
+    {%for show in show %}
+    <tr>
+        <td>{{show.name}}</td>
+        <td>{{show.birth}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

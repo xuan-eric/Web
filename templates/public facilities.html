@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block main %}
+
+     <!-- ##### Breadcumb Area Start ##### -->
+     <div class="breadcumb-area bg-img" style="background-image: url({{ url_for('static', filename='images/bg-img/b1.jpg')}});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content text-center">
+                        <h2>about us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+
+
+<!-- 公設借閱 -->
+<div class="blog-wrapper section-padding-50-0-0 clearfix">
+    <div class="publicf-bg-color">
+        <div class="container">
+            <div class="row justify-content-center">
+            <!-- Contact Form Area -->
+                <div class="col-12 col-md-10 col-lg-9">
+                    <div class="contact-form">
+                        <p></p><br>
+                        <h2>公設借閱</h2>
+                        <p></p><br>
+                        <!-- Contact Form -->
+                        <form action="#" method="post">
+                            <div class="row">
+
+                                <div class="publicf-2px-text-collor text-light">
+                                    <label>姓名</label>
+                                </div>
+                                <div class="col-12 col-md-5 group">
+                                    <input type="text" name="name" id="name" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="publicf-2px-text-collor text-light">
+                                    <label>電話</label>
+                                </div>
+                                <div class="col-12 col-md-5 group">
+                                    <input type="text" name="number" id="phone-number" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                </div>
+
+                                <div class="publicf-4px-text-collor text-light">
+                                    <label>需借物品</label>
+                                </div>
+                                <div class="col-10 group">
+                                    <input type="text" name="thing" id="thing" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                </div>
+
+                                <div class="publicf-4px-text-collor text-light">
+                                    <label>借用時間</label>
+                                </div>
+                                <div class="col-10 group">
+                                    <input type="datetime-local" name="time" id="time1" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                </div>
+                                <br>
+                                <div class="publicf-4px-text-collor text-light">
+                                    <label>歸還時間</label>
+                                </div>
+                                <div class="col-10 group">
+                                    <input type="datetime-local" name="time" id="time2" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn original-btn">送出</button>
+                                    <p></p><br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of 公設借閱 -->
+
+{% endblock %}

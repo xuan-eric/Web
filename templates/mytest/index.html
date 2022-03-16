@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首頁</title>
+    <!--    <h1>這裡是首頁</h1>-->
+    <style type="text/css">
+        .header{
+            width:100%;
+            height:40px;
+            margin:auto;
+            }
+        .footer{
+            width:100%;
+            height:40px;
+            margin:auto;
+            }
+        .content{
+            width:100%;
+            height:450px;
+            margin:0 auto;
+            }
+    </style>
+</head>
+<body>
+{% include "mytest/header.html" %}
+<div class="content">
+    <table border="1" cellpadding="10" >
+        <tr>
+            <th style="background-color: #c9e7f0">/</th>
+            <th style="background-color: #6fc3dc">首頁</th>
+        </tr>
+        <tr>
+            <th style="background-color: #6fc3dc">/static</th>
+            <th style="background-color: #c9e7f0">查看css,js,images有無正常</th>
+        </tr>
+        <tr>
+            <th style="background-color: #c9e7f0">/login</th>
+            <th style="background-color: #6fc3dc">登入畫面</th>
+        </tr>
+        <tr>
+            <th style="background-color: #6fc3dc">/user/username</th>
+            <th style="background-color: #c9e7f0">使用者中心，username隨便打</th>
+        </tr>
+        <tr>
+            <th style="background-color: #c9e7f0">/if</th>
+            <th style="background-color: #6fc3dc">if語句，重整可以看到亂數在變</th>
+        </tr>
+        <tr>
+            <th style="background-color: #6fc3dc">/for</th>
+            <th style="background-color: #c9e7f0">for語句，表格</th>
+        </tr>
+        <tr>
+            <th style="background-color: #c9e7f0">/base_index</th>
+            <th style="background-color: #6fc3dc">繼承模板</th>
+        </tr>
+        <tr>
+            <th style="background-color: #6fc3dc">/product</th>
+            <th style="background-color: #c9e7f0">繼承模板-title</th>
+        </tr>
+    </table>
+</div>
+{% include "mytest/footer.html" %}
+</body>
+
+</html>

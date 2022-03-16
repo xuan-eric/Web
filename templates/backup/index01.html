@@ -1,0 +1,302 @@
+{% extends "base.html" %}
+{% block main %}
+
+<div class="hero-area">
+    <!-- Hero Slides Area -->
+    <div class="hero-slides owl-carousel">
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img"
+             style="background-image: url({{ url_for('static', filename='images/bg-img/b2.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a
+                                look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img"
+             style="background-image:url({{url_for('static', filename='images/bg-img/b1.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a
+                                look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Slide -->
+        <div class="single-hero-slide bg-img"
+             style="background-image:url({{url_for('static', filename='images/bg-img/b3.jpg')}});">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="slide-content text-center">
+                            <div class="post-tag">
+                                <a href="{{ url_for('home')}}" data-animation="fadeInUp">lifestyle</a>
+                            </div>
+                            <h2 data-animation="fadeInUp" data-delay="250ms"><a href="{{ url_for('singlepost')}}">Take a
+                                look at
+                                last night’s party!</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Blog Wrapper Start ##### -->
+<div class="blog-wrapper section-padding-100 clearfix">
+    <div class="container">
+        <div class="row align-items-end">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area clearfix mb-100">
+                    <!-- Blog Content -->
+                    <div class="single-blog-content">
+                        <div class="line"></div>
+                        <a href="{{ url_for('home')}}" class="post-tag">公佈欄</a>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <!-- <th scope="col">#</th> -->
+                                <th scope="col">日期</th>
+                                <th scope="col" , width=80%>標題</th>
+                                <!-- <th scope="col">內容</th> -->
+                                <!-- <th scope="col">點閱次數</th> -->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                        <a href="{{ url_for('home')}}" class="btn original-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s"
+                     data-wow-duration="1000ms">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-thumbnail">
+                                <img src="{{url_for('static', filename='images/blog-img/3.jpg')}}" alt="">
+                                <div class="post-date">
+                                    <a href="{{ url_for('home')}}">17 <span>December</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Activity</a>
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">「臥」在薑餅屋</a></h4>
+                                <p>第25屆宿委會12月自訂活動-「臥」在薑餅屋
+                                    照過來，照過來!
+                                    在神聖的聖誕夜，高科大宿舍居然被邪惡的薑餅魔人入侵了!
+                                    為了拯救宿舍的和平，需要大家趕快來報名本次活動
+                                    找出潛藏在四周的薑餅魔人，並且用你的嘴降下最嚴厲的制裁
+                                    《找出潛藏在聖誕夜臥底的薑餅人，並吃掉它吧!》
+                                    活動時間:108年12月17日 星期二
+                                    活動地點:男宿敬業樓B1F創新育成中心</p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <p>3 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
+                     data-wow-duration="1000ms">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-thumbnail">
+                                <img src="{{url_for('static', filename='images/blog-img/4.jpg')}}" alt="">
+                                <div class="post-date">
+                                    <a href="{{ url_for('home')}}">29 <span>November</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Activity</a>
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">水果深得我心</a></h4>
+                                <p>🍎準備期中考，讓你埋頭苦讀到心很累嗎？期中考結束、疫情逐漸趨緩，該好好放鬆一下了～快來報名宿舍11月的活動🍒水果深得我心🍒
+                                    一起手作水果三明治、玩遊戲，保證你的笑容像水果一樣甜，心情像三明治一樣好滋味😋
+                                    🍊活動時間：110/11 /29 (一)
+                                    19:00 開始入場，預計結束時間 21:45
+                                    🍇活動地點：男宿 B1F 創新育成中心
+                                </p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <p>3 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s"
+                     data-wow-duration="1000ms">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-blog-thumbnail">
+                                <!-- <img src="img/blog-img/7.jpg" alt=""> -->
+                                <!-- <div class="post-date">
+                                    <a href="#">10 <span>march</span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content mt-50">
+                                <div class="line"></div>
+                                <a href="{{ url_for('home')}}" class="post-tag">Chicken Soup for the Soul</a>
+                                <!--心靈雞湯-->
+                                <h4><a href="{{ url_for('home')}}" class="post-headline">Don’t let the past steal your
+                                    present.</a></h4>
+                                <p>別讓過去悄然偷走了你的當下。</p>
+                                <div class="post-meta">
+                                    <p>By <a href="{{ url_for('home')}}">james smith</a></p>
+                                    <!-- <p>3 comments</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Load More -->
+                <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                    <a href="{{ url_for('home')}}" class="btn original-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Instagram Feed Area Start ##### -->
+<div class="instagram-feed-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="insta-title">
+                    <h5>Follow us @ Instagram</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Instagram Slides -->
+    <div class="instagram-slides owl-carousel">
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/1.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/2.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/3.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/4.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/5.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/6.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Single Insta Feed -->
+        <div class="single-insta-feed">
+            <img src="{{url_for('static', filename='images/instagram-img/7.png')}}" alt="">
+            <!-- Hover Effects -->
+            <div class="hover-effects">
+                <a href="{{ url_for('home')}}" class="d-flex align-items-center justify-content-center"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "base_account.html" %}
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mt-5 pt-5">
+            <div class="row z-depth-3">
+                <div class="a col-sm-4 rounded-left">
+                    <div class="card-block text-center">
+                        <img src="{{url_for('static', filename='images/bg-img/b6.jpg')}}" alt="">
+                        <input type="file" name="" id="file" accept=".jpg, .jpeg, .png"><br><br><!-- image/* -->
+                        <label for="file">編輯圖片</label>
+                    </div>
+                </div>
+                <div class="b col-sm-8 rounded-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p style="float:left">性別</p>
+                            <input type="text" name="" placeholder="{{ account['sex'] }}">
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="float:left">使用者名稱</p>
+                            <input type="text" name="" placeholder="{{ account['username'] }}">
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="float:left">Mail</p>
+                            <input type="email" name="" placeholder="{{ account['email'] }}">
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="float:left">密碼</p>
+                            <input type="text" name="" placeholder="{{ account['password'] }}">
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="float:left">電話號碼</p>
+                            <input type="text" name="" placeholder="{{ account['phone'] }}">
+                        </div>
+                        <button style="float: left; margin:10px 10px 20px 10px;">取消</button>
+                        <button style="float: right; margin:10px 10px 20px 10px;">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
